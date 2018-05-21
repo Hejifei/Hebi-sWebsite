@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Icon,Badge  } from 'antd';
 import 'antd/lib/button/style/css';
 import './Layout.css';
+import './index-1.css'
 import headerImg from './mini_default_room.png';
 import {Menulist,RouterSon} from 'router/router'
 
@@ -27,7 +28,6 @@ export class PubliLayout extends Component {
   }
 
   render() {
-    console.log(this.props.children)
     return (
       <div>
         <div className='headArea'>

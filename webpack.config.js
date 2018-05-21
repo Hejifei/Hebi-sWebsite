@@ -39,6 +39,7 @@ const publicConfig = {
         new CleanWebpackPlugin(['dist']),
         extractCSS,
         extractLESS,
+        
     ]
 };
 module.exports = merge(commonConfig, publicConfig);

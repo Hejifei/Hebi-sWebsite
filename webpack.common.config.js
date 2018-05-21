@@ -40,8 +40,17 @@ commonConfig = {
                     loader: 'svg-inline-loader',
                     options: {}
                 }
-            }
-            ]
+            },
+            {
+                test: require.resolve('jquery'),
+                use: [{
+                  loader: 'expose-loader',
+                  options: 'jQuery'
+                },{
+                  loader: 'expose-loader',
+                  options: '$'
+                }]
+            }]
     },
     plugins: [
         /*HtmlWebpackPlugin 每次会自动把js插入到你的模板index.html里面去*/

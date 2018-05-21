@@ -2,7 +2,12 @@ import React, {Component} from 'react';
 import 'antd/lib/button/style/css';
 import { Form, Icon, Input, Button, Checkbox } from 'antd';
 
-import './Login.less'
+// const Loginbg = require('./loginbg');
+
+
+import './Login.less';
+import './loginbg.css';
+import Loginbg from './loginbg';
 const FormItem = Form.Item;
 
 class Login extends Component {
@@ -32,9 +37,12 @@ class Login extends Component {
         const { getFieldDecorator } = this.props.form;
         return (
             <div className='loginOut'>
-                <header className='loginHeader'>
+                {/* <header className='loginHeader'>
                     
-                </header>
+                </header> */}
+                {/* <img src={loginbg} /> */}
+                <Loginbg/>
+                {/* <svg className='loginbg' style={{width:'1250',height:'630',}}  dangerouslySetInnerHTML={{__html: loginbg }} /> */}
                 <div className='loginContent'>
                     <Form onSubmit={this.handleSubmit} className="login-form">
                         <FormItem>
@@ -59,7 +67,7 @@ class Login extends Component {
                             <Checkbox>Remember me</Checkbox>
                         )}
                         {/* <a className="login-form-forgot" href="">Forgot password</a> */}
-                        <Button type="primary" htmlType="submit" className="login-form-button">
+                        <Button type="primary" htmlType="submit" className="login-form-button loginBtn">
                             Log in
                         </Button>
                         {/* Or <a href="">register now!</a> */}

@@ -14,7 +14,6 @@ const devConfig ={
             path.join(__dirname, 'src/index.js')
         ],
     },
-    
     output: {
         filename: '[name].[hash].js'
     },
@@ -56,6 +55,8 @@ const devConfig ={
                 'NODE_ENV': '"production"'
             }
         }),
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
     ],
 };
 

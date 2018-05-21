@@ -22,7 +22,7 @@ export class Menulist extends React.Component{
     render(){
         return (
             <ul>
-                <li><Link to="/" activeClassName='current'><Icon type="home" /> 首页</Link></li>
+                <li><Link to="/home" activeClassName='current'><Icon type="home" /> 首页</Link></li>
                 <li><Link to="/page1" activeClassName='current'><Icon type="smile-o" /> Page1</Link></li>
                 <li><Link to="/counter" activeClassName='current'><Icon type="picture" /> Counter</Link></li>
                 <li><Link to="/userinfo" activeClassName='current'><Icon type="notification" /> UserInfo</Link></li>
@@ -51,7 +51,7 @@ export class RouterSon extends React.Component {
         return (
             <div className='contentWrapper'>     
                 <Route path="/home" component={LoginChcek(LazyLoad(Home))} />
-                <Redirect from='/' to='/datebook' />
+                <Redirect from='/' to='/home' />
                 <Route path="/page1" component={LoginChcek(LazyLoad(Page1))} />
                 <Route path="/counter" component={LoginChcek(LazyLoad(Counter))} />
                 <Route path="/userinfo" component={LoginChcek(LazyLoad(UserInfo))} />
