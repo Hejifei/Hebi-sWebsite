@@ -1,4 +1,6 @@
-* {margin: 0px;padding: 0px;box-sizing: border-box;font: 13px/1.5 stheiti,helvetica,arial,sans-serif;color: #333;}
+* {margin: 0px;padding: 0px;box-sizing: border-box;
+    /* font: 13px/1.5 stheiti,helvetica,arial,sans-serif; */
+    color: #333;}
 .clearfix:before,
 .clearfix:after {
   display: table;

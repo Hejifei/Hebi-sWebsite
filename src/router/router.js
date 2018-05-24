@@ -53,7 +53,7 @@ export class RouterSon extends React.Component {
         return (
             <div className='contentWrapper'>     
                 <Route path="/home" component={LoginChcek(LazyLoad(Home))} />
-                <Redirect from='/' to='/home' />
+                <Redirect from='/' to='/newdiary' />
                 <Route path="/page1" component={LoginChcek(LazyLoad(Page1))} />
                 <Route path="/counter" component={LoginChcek(LazyLoad(Counter))} />
                 <Route path="/userinfo" component={LoginChcek(LazyLoad(UserInfo))} />

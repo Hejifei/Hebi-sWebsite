@@ -35,11 +35,29 @@ commonConfig = {
                 }]
             },
             {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                  'file-loader'
+                ]
+            },
+            {
                 test: /\.svg/,
                 use: {
                     loader: 'svg-inline-loader',
                     options: {}
                 }
+            },
+            {
+                test: /\.(csv|tsv)$/,
+                use: [
+                  'csv-loader'
+                ]
+            },
+            {
+                test: /\.xml$/,
+                use: [
+                  'xml-loader'
+                ]
             },
             {
                 test: require.resolve('jquery'),
