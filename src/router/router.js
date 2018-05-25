@@ -24,11 +24,11 @@ export class Menulist extends React.Component{
         return (
             <ul>
                 <li><Link to="/home" activeClassName='current'><Icon type="home" /> 首页</Link></li>
-                <li><Link to="/page1" activeClassName='current'><Icon type="smile-o" /> Page1</Link></li>
+                {/* <li><Link to="/page1" activeClassName='current'><Icon type="smile-o" /> Page1</Link></li>
                 <li><Link to="/counter" activeClassName='current'><Icon type="picture" /> Counter</Link></li>
                 <li><Link to="/userinfo" activeClassName='current'><Icon type="notification" /> UserInfo</Link></li>
-                <li><Link to="/shop" activeClassName='current'><Icon type="notification" /> Redux</Link></li>
-                <li><Link to="/newdiary" activeClassName='current'><Icon type="notification" /> 日志</Link></li>
+                <li><Link to="/shop" activeClassName='current'><Icon type="notification" /> Redux</Link></li> */}
+                <li><Link to="/newdiary" activeClassName='current'><Icon type="smile-o" /> 日志</Link></li>
                 <li><Link to="/datebook" activeClassName='current'><Icon type="notification" /> 大事记</Link></li>
             </ul>
         )
@@ -53,7 +53,7 @@ export class RouterSon extends React.Component {
         return (
             <div className='contentWrapper'>     
                 <Route path="/home" component={LoginChcek(LazyLoad(Home))} />
-                <Redirect from='/' to='/newdiary' />
+                <Redirect from='/' to='/home' />
                 <Route path="/page1" component={LoginChcek(LazyLoad(Page1))} />
                 <Route path="/counter" component={LoginChcek(LazyLoad(Counter))} />
                 <Route path="/userinfo" component={LoginChcek(LazyLoad(UserInfo))} />

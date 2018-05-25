@@ -5,6 +5,8 @@
     npm start //项目运行
     npm run build //项目打包
 
+文本编辑器文档
+https://github.com/margox/braft-editor
 
 #创建静态服务
 npm install -g serve

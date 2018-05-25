@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import { Link} from 'react-router-dom';
 import Titleimg from './tl-title-new.png';
 import NewState from 'components/NewState/NewState';
 import NewPhoto from 'components/NewPhoto/NewPhoto';
@@ -41,7 +41,7 @@ export default class Home extends Component {
                             <i className='stateicon sicon2'></i>上传照片
                         </div>
                         <div className='editTypeson'>
-                            <i className='stateicon sicon3'></i>写日志
+                            <Link to="/newdiary"><i className='stateicon sicon3'></i>写日志</Link>
                         </div>
                     </div>
                     <NewState ifshow={this.state.stateShow}  />
