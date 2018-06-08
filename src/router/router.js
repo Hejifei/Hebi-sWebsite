@@ -18,18 +18,20 @@ import Player from 'bundle-loader?lazy&name=player!pages/Player/Player';
 import Login from 'bundle-loader?lazy&name=login!pages/Login/Login';
 import DateBook from 'bundle-loader?lazy&name=datebook!pages/DateBook/DateBook';
 import NewDiary from 'bundle-loader?lazy&name=newdiary!pages/NewDiary/NewDiary';
+import Three from 'bundle-loader?lazy&name=three!pages/Three/Three';
 
 export class Menulist extends React.Component{
     render(){
         return (
             <ul>
-                <li><Link to="/home" activeClassName='current'><Icon type="home" /> 首页</Link></li>
+                <li><Link to="/home"><Icon type="home" /> 首页</Link></li>
                 {/* <li><Link to="/page1" activeClassName='current'><Icon type="smile-o" /> Page1</Link></li>
                 <li><Link to="/counter" activeClassName='current'><Icon type="picture" /> Counter</Link></li>
                 <li><Link to="/userinfo" activeClassName='current'><Icon type="notification" /> UserInfo</Link></li>
                 <li><Link to="/shop" activeClassName='current'><Icon type="notification" /> Redux</Link></li> */}
-                <li><Link to="/newdiary" activeClassName='current'><Icon type="smile-o" /> 日志</Link></li>
-                <li><Link to="/datebook" activeClassName='current'><Icon type="notification" /> 大事记</Link></li>
+                <li><Link to="/newdiary"><Icon type="smile-o" /> 日志</Link></li>
+                <li><Link to="/datebook"><Icon type="notification" /> 大事记</Link></li>
+                <li><Link to="/three" ><Icon type="notification" /> Three.js</Link></li>
             </ul>
         )
     }
@@ -53,13 +55,14 @@ export class RouterSon extends React.Component {
         return (
             <div className='contentWrapper'>     
                 <Route path="/home" component={LoginChcek(LazyLoad(Home))} />
-                <Redirect from='/' to='/home' />
+                {/* <Redirect from='/' to='/home' /> */}
                 <Route path="/page1" component={LoginChcek(LazyLoad(Page1))} />
                 <Route path="/counter" component={LoginChcek(LazyLoad(Counter))} />
                 <Route path="/userinfo" component={LoginChcek(LazyLoad(UserInfo))} />
                 <Route path="/shop" component={LoginChcek(LazyLoad(Shop))} />
                 <Route path='/datebook' component={LoginChcek(LazyLoad(DateBook))}/>
                 <Route path='/newdiary' component={LoginChcek(LazyLoad(NewDiary))}/>
+                <Route path='/three' component={LoginChcek(LazyLoad(Three))}/>
                 <Route path='/404' component={LoginChcek(LazyLoad(NotFound))} />
                 {/* <Redirect from='*' to='/404' /> */}
                 {/* <Route path="*" component={LoginChcek(LazyLoad(NotFound))}/> */}

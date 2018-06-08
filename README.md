@@ -1,5 +1,5 @@
 框架搭建参考链接： https://github.com/brickspert/blog/issues/1#init
-
+three.js:https://threejs.org/docs/index.html#manual/introduction/Creating-text
 
     cnpm install 初始化
     npm start //项目运行
