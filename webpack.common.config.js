@@ -81,7 +81,7 @@ commonConfig = {
     ],
     /*文件路径别名设置*/
     resolve: {
-        extensions: ['.js','.jsx'],
+        extensions: ['.js', '.jsx', '.json'],
         alias: {
             pages: path.join(__dirname, 'src/pages'),
             components: path.join(__dirname, 'src/components'),
