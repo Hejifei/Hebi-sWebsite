@@ -6,13 +6,13 @@ import 'braft-editor/dist/braft.css'
 import {observer} from 'mobx-react';
 import WebState from '../../MobX/webState';
 
-@observer
+// @observer
 class TimerView extends React.Component {
-    render() {
-        return (<button onClick={this.onReset.bind(this)}>
-                Seconds passed: {this.props.appState.timer}
-            </button>);
-    }
+    // render() {
+    //     return (<button onClick={this.onReset.bind(this)}>
+    //             Seconds passed: {this.props.appState.timer}
+    //         </button>);
+    // }
 
     onReset () {
         this.props.WebState.resetTimer();
@@ -68,7 +68,7 @@ export default class Newstate extends Component {
                 <div className="editorC">
                   <BraftEditor {...editorProps}/>
                 </div>
-                <TimerView WebState={WebState} />
+                {/* <TimerView WebState={WebState} /> */}
             </div>
             
         )
