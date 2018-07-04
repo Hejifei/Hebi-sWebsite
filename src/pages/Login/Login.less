@@ -1,9 +1,19 @@
-.loginOut{position: relative;width: 100vw;min-width: 1250px;height: 100vh;min-height:630px;background-color: #e8f3e2;}
+.loginOut{position: relative;width: 100vw;min-width: 1250px;height: 100vh;min-height:630px;background-color: #e8f3e2;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+}
 .loginHeader{position: relative;width: 100%;height: 360px;background-color: #00b38a;}
-.loginbg{position: relative;top:50%;left: 50%;margin-left: -625px;margin-top:-315px;width:1250px;height:630px;}
-.loginContent{position: absolute;left: 50%;
+.loginbg{
+    position: relative;top:50%;left: 50%;
+    width:1250px;height:630px;
+    // margin-left: -625px;margin-top:-315px;
+    transform: translate(-50%, -50%);
+}
+.loginContent{position: absolute;left: 50%;top:50%;
     z-index: 1;width: 452px;
-    margin-left: -226px;margin-top:-245px;
+    transform: translate(-50%, -50%);
+    // margin-left: -226px;margin-top:-245px;
     padding: 62px 70px 68px 78px;
     background-color: rgba(255, 255, 255, 0.3);
     display: table;

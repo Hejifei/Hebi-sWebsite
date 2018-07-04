@@ -8,7 +8,7 @@ export default class App extends Component {
         </defs>
         <title>Amusement park flat by Lina</title>
         <g>
-          <rect id="day" class="cls-1" x="-8.79" y="-27.96" width="1250" height="630"></rect>
+          <rect id="day" class="cls-1" x="-8.79" y="-27.96" width="1250" height="830"></rect>
           <g id="sun">
             <path class="cls-2" d="M152.93,208.54a90.55,90.55,0,0,0,0-181.09"></path>
             <path class="cls-99" d="M152.93,27.44a90.55,90.55,0,1,0,0,181.09"></path>

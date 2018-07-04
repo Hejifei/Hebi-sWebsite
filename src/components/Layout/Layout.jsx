@@ -77,7 +77,7 @@ export class PubliLayout extends Component {
                 </div>
                 <p className='CBp'>爱情宣言</p>
                 <div className='CBtxt'>
-                  何必小宝贝，2018年6月20号就要来到我们这个小家了，爸爸特此为何必宝宝建立了这个网站，以此来跟汪妈妈一起记录何必的点点滴滴。
+                  {/* 何必小宝贝，2018年6月20号就要来到我们这个小家了，爸爸特此为何必宝宝建立了这个网站，以此来跟汪妈妈一起记录何必的点点滴滴。 */}
                   <Icon type="smile" /><Icon type="smile" /> <Icon type="smile-o" /><Icon type="smile-o" />
                 </div>
               </div>
